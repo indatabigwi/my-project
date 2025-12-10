@@ -1,0 +1,26 @@
+body {
+  background-color: lightblue;
+}
+
+[
+    h2
+    color:="black"
+    text-align:="right"
+]
+
+p {
+  font-family:"arial";
+  font: size 10px;
+}
+p {
+  color: red;
+  text-align: left;
+}
+[
+  <label for="emeil"> emeil </label>
+    <input type="email" id="emeil"> <br>
+    font size:100px
+]
+
+
+

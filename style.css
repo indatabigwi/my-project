@@ -1,20 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-  background-color: lightblue;
+    background: #f4f4f4;
+    color: #333;
 }
 
-h2 {
-  color: black;
-  text-align: right;
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-p {
-  font-family: arial;
-  font-size: 10px;
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-p {
-  color: red;
-  text-align: left;
+header nav a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 30px;
+    text-align: center;
+    background: #00bcd4;
+    color: white;
+}
+
+.hero h1 span {
+    color: #222;
+}
+
+.btn {
+    background: #222;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #111;
+}
+
+/* About Section */
+.about, .projects, .contact {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.project-boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.box:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .project-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Social media links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 8px 14px;
+    background: white;
+    color: #00bcd4;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #222;
+    color: white;
+}
+/* Animated Social Icons */
+.social-icons {
+    margin-top: 25px;
+}
+
+.icon {
+    font-size: 30px;
+    margin-right: 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+/* Default Colors */
+.fb { color: #1877f2; }
+.ig { color: #e1306c; }
+.li { color: #0077b5; }
+.gh { color: #333; }
+
+/* Hover animation */
+.icon:hover {
+    transform: scale(1.3) rotate(10deg);
+    opacity: 0.8;
+}
+#cv {
+    text-align: center;
+    padding: 50px;
+}
+
+.cv-btn {
+    background: #222;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.cv-btn:hover {
+    background: #00bcd4;
+    color: white;
 }
 
 
